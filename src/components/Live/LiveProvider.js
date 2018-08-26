@@ -1,4 +1,5 @@
 import createContext from 'create-react-context';
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { generateElement, renderElementAsync } from '../../utils/transpile';
@@ -11,7 +12,7 @@ export default class LiveProvider extends Component {
   static defaultProps = {
     code: '',
     mountStylesheet: true,
-    noInline: false,
+    noInline: false
   };
 
   static propTypes = {
@@ -20,7 +21,7 @@ export default class LiveProvider extends Component {
     scope: PropTypes.object,
     mountStylesheet: PropTypes.bool,
     noInline: PropTypes.bool,
-    transformCode: PropTypes.func,
+    transformCode: PropTypes.func
   };
 
   onChange = code => {
@@ -36,7 +37,7 @@ export default class LiveProvider extends Component {
     // Transpilation arguments
     const input = {
       code: transformCode ? transformCode(code) : code,
-      scope,
+      scope
     };
     const errorCallback = err =>
       this.setState({ element: undefined, error: err.toString() });
@@ -92,7 +93,7 @@ export default class LiveProvider extends Component {
           ...this.state,
           code: this.props.code,
           onError: this.onError,
-          onChange: this.onChange,
+          onChange: this.onChange
         }}
       >
         <div className={cn('react-live', className)} {...rest}>
