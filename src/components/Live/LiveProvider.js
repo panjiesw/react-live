@@ -64,7 +64,7 @@ export default class LiveProvider extends Component {
     this.transpile({ code, scope, transformCode, noInline });
   }
 
-  componentWillReceiveProps({ code, scope, noInline, transformCode }) {
+  componentDidUpdate({ code, scope, noInline, transformCode }) {
     if (
       code !== this.props.code ||
       scope !== this.props.scope ||
@@ -86,6 +86,13 @@ export default class LiveProvider extends Component {
       scope,
       ...rest
     } = this.props;
+
+    const editorProps = {
+      ...this.state,
+      code: this.props.code,
+      onError: this.onError,
+      onChange: this.onChange
+    };
 
     return (
       <LiveContext.Provider
