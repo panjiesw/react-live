@@ -17,7 +17,6 @@ const plugins = [
     namedExports: {
       'buble/dist/buble.deps': ['transform'],
       'buble': ['transform'],
-      'prismjs/components/prism-core': ['highlight', 'languages']
     }
   }),
   babel({

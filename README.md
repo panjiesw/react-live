@@ -10,6 +10,13 @@
 <img src="https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg">
 </p>
 
+**NOTES**
+
+This is a fork of [react-live](https://github.com/FormidableLabs/react-live) which
+uses [react-simple-code-editor](https://github.com/satya164/react-simple-code-editor) and [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer)
+
+---
+
 **React Live** brings you the ability to render React components and present the user with editable
 source code and live preview.
 It supports server-side rendering and comes in a tiny bundle, thanks to Bublé and a Prism.js-based editor.

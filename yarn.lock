@@ -2470,15 +2470,6 @@ cli-boxes@^1.0.0:
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
   integrity sha1-T6kXw+WclKAEzWH47lCdplFocUM=
 
-clipboard@^1.5.5:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-1.6.1.tgz#65c5b654812466b0faab82dc6ba0f1d2f8e4be53"
-  integrity sha1-ZcW2VIEkZrD6q4Lca6Dx0vjkvlM=
-  dependencies:
-    good-listener "^1.2.0"
-    select "^1.1.2"
-    tiny-emitter "^1.0.0"
-
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -3074,11 +3065,6 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
-
-delegate@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.1.2.tgz#1e1bc6f5cadda6cb6cbf7e6d05d0bcdd5712aebe"
-  integrity sha1-HhvG9crdpstsv35tBdC83VcSrr4=
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -4146,13 +4132,6 @@ globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
   integrity sha512-S0nG3CLEQiY/ILxqtztTWH/3iRRdyBLw6KMDxnKMchrtbj2OFmehVh0WUCfW3DUrIgx/qFrJPICrq4Z4sTR9UQ==
-
-good-listener@^1.2.0:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
-  integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
-  dependencies:
-    delegate "^3.1.2"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
@@ -6744,12 +6723,10 @@ pretty-format@^22.1.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
-prismjs@1.6:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.6.0.tgz#118d95fb7a66dba2272e343b345f5236659db365"
-  integrity sha1-EY2V+3pm26InLjQ7NF9SNmWds2U=
-  optionalDependencies:
-    clipboard "^1.5.5"
+prism-react-renderer@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-0.1.5.tgz#1475ced5cfc7f47b7c1611e1cf649b32df2eb1f2"
+  integrity sha512-OoFeWfTYwXP9bdsJItDKK2hCnGZ78AGHism6up7wzBxBuO/0Hcn3nvA8K2LJOb5UxYjXqMOedNhHQuU7ypDdnw==
 
 private@^0.1.6:
   version "0.1.7"
@@ -7105,6 +7082,11 @@ react-onclickoutside@^6.5.0:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.1.tgz#6a5b5b8b4eae6b776259712c89c8a2b36b17be93"
   integrity sha512-p84kBqGaMoa7VYT0vZ/aOYRfJB+gw34yjpda1Z5KeLflg70HipZOT+MXQenEhdkPAABuE2Astq4zEPdMqUQxcg==
+
+react-simple-code-editor@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.8.0.tgz#c0c36df276c49d3d4410b8457f7a0a15396acbbf"
+  integrity sha512-H3HknuOqH2h8Kbg+vCUXf7YwDMC8UI0pEx2j5sODFVdX/RBeGX+w0vB+7LLrCh1qaQ1nTycyXXKWZifL3Dt0gg==
 
 react-split-pane@^0.1.74:
   version "0.1.76"
@@ -7743,11 +7725,6 @@ schema-utils@^0.4.0, schema-utils@^0.4.2:
     ajv "^5.0.0"
     ajv-keywords "^2.1.0"
 
-select@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
-  integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
-
 "semver@2 || 3 || 4 || 5", semver@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
@@ -8329,11 +8306,6 @@ timers-browserify@^2.0.4:
   integrity sha512-HQ3nbYRAowdVd0ckGFvmJPPCOH/CHleFN/Y0YQCX1DVaB7t+KFvisuyN09fuP8Jtp1CpfSh8O8bMkHbdbPe6Pw==
   dependencies:
     setimmediate "^1.0.4"
-
-tiny-emitter@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-1.1.0.tgz#ab405a21ffed814a76c19739648093d70654fecb"
-  integrity sha1-q0BaIf/tgUp2wZc5ZICT1wZU/ss=
 
 tinycolor2@^1.4.1:
   version "1.4.1"

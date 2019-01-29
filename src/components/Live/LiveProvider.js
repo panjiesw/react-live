@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { generateElement, renderElementAsync } from '../../utils/transpile';
 import cn from '../../utils/cn';
-import Style from '../Editor/Style';
 
 import LiveContext from './LiveContext';
 
@@ -20,6 +19,7 @@ export default class LiveProvider extends Component {
     mountStylesheet: PropTypes.bool,
     noInline: PropTypes.bool,
     transformCode: PropTypes.func,
+    theme: PropTypes.object,
   };
 
   onChange = code => {
@@ -82,6 +82,7 @@ export default class LiveProvider extends Component {
       noInline,
       transformCode,
       scope,
+      theme,
       ...rest
     } = this.props;
 
@@ -92,10 +93,10 @@ export default class LiveProvider extends Component {
           code: this.props.code,
           onError: this.onError,
           onChange: this.onChange,
+          theme: this.props.theme,
         }}
       >
         <div className={cn('react-live', className)} {...rest}>
-          {mountStylesheet && <Style />}
           {children}
         </div>
       </LiveContext.Provider>
